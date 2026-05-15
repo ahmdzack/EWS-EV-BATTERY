@@ -104,7 +104,10 @@ Berikut adalah mekanisme kerja redundansi pada sistem multi-gateway:
 
 ---
 
-## 9. Struktur Data (*Shared Data Structure*)
+## 9. Sistem real-time stream processing
+adalah metode pengolahan data yang menganalisis dan memproses aliran data secara instan saat data tersebut dihasilkan atau diterima, sering kali dalam hitungan milidetik
+
+## 10. Struktur Data (*Shared Data Structure*)
 Agar komunikasi *Struct Binary* via LoRa berhasil diproses, kedua perangkat (**Transmitter/Node** dan **Receiver/Gateway**) wajib mendefinisikan bentuk data yang sama persis. Jika strukturnya berbeda, data yang di-pasing akan rusak (*corrupt*).
 
 Berikut adalah definisi struktur C++ yang digunakan:
@@ -119,4 +122,4 @@ struct __attribute__((packed)) PayloadBMS {
     float latitude;              // Koordinat GPS Latitude (4 Byte)
     float longitude;             // Koordinat GPS Longitude (4 Byte)
     uint32_t timestamp;          // Waktu pengiriman paket data (4 Byte)
-};
+}; 
