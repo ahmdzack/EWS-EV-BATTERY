@@ -1,7 +1,7 @@
 # Dokumentasi Teknis: EWS-EV-BATTERY
 
-Sistem Peringatan Dini (*Early Warning System*) untuk pemantauan baterai kendaraan listrik berbasis ESP32, LoRa, dan protokol komunikasi BMS.
-
+predictive maintenance untuk pemantauan baterai kendaraan listrik berbasis ESP32, LoRa, dan protokol komunikasi BMS.
+perubahan parsing data, parsing data mungkin seharusnya ada pada reciever? jika dilakukan pada transmitter apakah ramnya masih tersisa karena harus diubah kemabali ke binary? 
 ---
 
 ## 1. Konsep Struct Binary vs String
